@@ -37,6 +37,7 @@ class _DicePageState extends State<DicePage> {
               onPressed: () {
                 setState(() {
                   leftDiceNo = Random().nextInt(6) + 1;
+                  rightDiceNo = Random().nextInt(6) + 1;
                 });
 
                 print("Left Dice Rolled");
@@ -50,6 +51,7 @@ class _DicePageState extends State<DicePage> {
               onPressed: () {
                 setState(() {
                   rightDiceNo = Random().nextInt(6) + 1;
+                  leftDiceNo = Random().nextInt(6) + 1;
                 });
 
                 print("Right Dice Rolled");
